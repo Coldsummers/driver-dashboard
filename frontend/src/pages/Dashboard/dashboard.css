@@ -1,0 +1,126 @@
+.dashboard-container {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative; 
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-top: -4.5rem; 
+}
+
+.driver-info h2 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.driver-info div {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 0.3rem;
+}
+
+.driver-info strong {
+  color: #222;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-bottom: 0;
+}
+
+.truck-pic {
+  width: 104%;
+  max-width: 104%;
+  height: auto;
+  border-radius: 0;
+  margin: 0 -0.7rem 1.5rem -0.5rem; /* Negative margin cancels container padding */
+  display: block;
+  box-shadow: none;
+}
+
+.document-list h2 {
+  text-align: center;
+  color: #2d3748;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.document-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1rem;
+}
+
+.view-link {
+  margin-right: 1rem;
+  color: #3182ce;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.view-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.back-btn {
+  align-self: flex-start;
+  margin-top: 5.5rem; 
+  margin-bottom: 0;
+  background: none;
+  margin-left: -0.5rem;
+  border: none;
+  color: #3f3e3e;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  outline: none;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #625e5e;
+}
+
+.back-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 500px) {
+  .dashboard-container {
+    padding: 1.5rem 0.2rem 1.5rem 0.2rem; 
+  }
+}
