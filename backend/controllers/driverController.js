@@ -32,3 +32,12 @@ exports.getDriver = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.getAllDrivers = async (req, res) => {
+  try {
+    const drivers = await Driver.find();
+    res.json(drivers);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
