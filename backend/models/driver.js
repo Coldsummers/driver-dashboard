@@ -5,7 +5,7 @@ const driverSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   truckType: { type: String, required: true },
-  profilePic: { type: String, required: true }, // Add this
+  profilePic: { type: String, required: true },
   document: { type: String, required: true },
 }, { timestamps: true });
 

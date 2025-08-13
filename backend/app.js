@@ -5,12 +5,19 @@ const path = require('path');
 const driverRoutes = require('./routes/driverRoutes');
 require('dotenv').config();
 const mongoose = require('mongoose');
+const fs = require('fs');
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Ensure uploads directory exists
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir);
+}
 
 // Multer setup
 const storage = multer.diskStorage({

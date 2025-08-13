@@ -7,7 +7,7 @@ function App() {
     <Router>
       <div className="app-container">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<RegistrationForm />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/dashboard/:id" element={<Dashboard />} />
           <Route path="*" element={<Dashboard />} /> 
