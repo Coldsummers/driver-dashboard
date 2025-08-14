@@ -89,8 +89,10 @@ npm run dev
 
 ## 🌐 Live Demo
 
-> _Coming soon!_  
-> Deploy easily to [Vercel](https://vercel.com/) (frontend) and [Heroku](https://heroku.com/) or [Render](https://render.com/) (backend).
+- **Frontend:** [driver-dashboard-nine.vercel.app](https://driver-dashboard-nine.vercel.app)
+- **Backend API:** [driver-dashboard.onrender.com](https://driver-dashboard.onrender.com)
+
+> **Note:** These demo links use free hosting. If the backend appears offline, please wait a few seconds and refresh. The service may be waking up!
 
 ---
 
